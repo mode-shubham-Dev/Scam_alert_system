@@ -1,0 +1,29 @@
+# ── Credentials & Environment ─────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── AWS / Cloud Secrets ────────────────────────────────────────────────────────
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ── User Uploads (serve from S3 on production) ────────────────────────────────
+public/uploads/*
+!public/uploads/.gitkeep
+
+# ── OS Noise ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── PHP Logs ──────────────────────────────────────────────────────────────────
+*.log
+error_log
